@@ -1,0 +1,96 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.flex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#root{
+    background: aquamarine;
+    height: 100vh;
+    -webkit-transition: background 1500ms ease-in-out;
+    transition: background 1500ms ease-in-out;
+}
+
+.quote{
+    color: aquamarine;
+    -webkit-transition: color 1500ms ease-in-out;
+    transition: color 1500ms ease-in-out; 
+}
+
+.app{
+    width: 600px;
+    background-color: white;
+    
+}
+
+.quote-wrapper{
+    padding: 3em;
+    position: relative;
+}
+.quote-wrapper::before{
+    position: absolute;
+    content: url("./images/quote\ left.png");
+    transform: scale(0.3);
+    top: 0px;
+    left: 0px;
+}
+.quote-wrapper::after{
+    position: absolute;
+    content: url("./images/quote\ right.png");
+    transform: scale(0.3);
+    bottom: 0px;
+    right: 0px;
+}
+
+
+
+footer{
+    padding: 1em 2em;
+    display: flex;
+    justify-content: space-between;
+}
+
+.social{
+    display: flex;
+}
+
+i{
+    width: 40px;
+    height: 40px;
+    margin-right: 0.5em;
+    background-color: darkgray;
+    color: white;
+    transition: opacity 200ms ease-in-out;
+    cursor: pointer;
+}
+
+i:hover{
+    opacity: 0.9;
+}
+
+button{
+    border: none;
+    padding: 1em 2em;
+    font-weight: 600;
+    background-color: orange;
+    color: white;
+    transition: opacity 200ms ease-in-out;
+    cursor: pointer;
+}
+
+button:hover{
+    opacity: 0.9;
+}
